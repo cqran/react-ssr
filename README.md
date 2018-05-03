@@ -1,8 +1,8 @@
-# React-SSR
+# React-Isomorphic
 
-React + MobX + React-Router (SSR)
+React + Redux + Express + Webpack-Isomorphic-Tools
 
-> 基于webpack4、React16实现React服务端渲染项目模板 <br>
+> 基于webpack4、React16实现React前后端同构 <br>
 
 ## How to use
 ```
