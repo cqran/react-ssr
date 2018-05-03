@@ -1,4 +1,4 @@
-import { observable, action, autorun, computed } from 'mobx';
+import { observable, action, autorun, computed, toJS} from 'mobx';
 
 export default class AppState {
   constructor ({ count, name } = { count: 0, name: 'chunyangqiao'}) {
@@ -18,8 +18,8 @@ export default class AppState {
   }
   toJson () {
     return {
-      count: this.count,
-      name: this.name
+     count: toJS(this.count),
+     name: toJS(this.name)
     }
   }
 }

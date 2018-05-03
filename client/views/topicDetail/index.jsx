@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import PropType from 'prop-types';
 import Helmet from 'react-helmet';
+
 // import { AppState } from '../../store/appState'
 @inject('appState') @observer
 export default class TopicDetail extends Component {
@@ -11,7 +12,8 @@ export default class TopicDetail extends Component {
   constructor () {
     super();
   }
-  asyncBootstrap () {
+  bootstrap () {
+    console.log(this.props.location);
     return new Promise((resolve) => {
       setTimeout(() => {
         this.props.appState.count = 3

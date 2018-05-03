@@ -9,7 +9,8 @@
     "dev:client": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack/client.config.js --mode development",
     "dev:server": "cross-env NODE_ENV=development node ./server/server.js",
     "clear": "rimraf dist",
-    "build": "npm run clear && npm run build:client && npm run build:server"
+    "build": "npm run clear && npm run build:client && npm run build:server",
+    "start": "cross-env NODE_ENV=production node ./server/server.js"
   },
   "repository": {
     "type": "git",
