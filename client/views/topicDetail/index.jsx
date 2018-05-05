@@ -13,7 +13,6 @@ export default class TopicDetail extends Component {
     super();
   }
   bootstrap () {
-    console.log(this.props.location);
     return new Promise((resolve) => {
       setTimeout(() => {
         this.props.appState.count = 3
